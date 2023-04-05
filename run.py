@@ -1,7 +1,7 @@
 import os
 from pypdf import PdfReader, PdfWriter
 
-def merge_pdfs(odd_file, even_file, output_file):
+def zip_merge_pdfs(odd_file, even_file, output_file):
     """Merges two pdf files. The odd_file contains odd pages only whereas the
     even_file contains even pages in reversed order. These two files result from
     scanning a two sided paper document when first the front side of all pages
@@ -35,7 +35,7 @@ def merge_pdfs(odd_file, even_file, output_file):
     with open(output_file, "wb") as o:
         merger.write(o)
 
-    print(f"New merged PDF file with {final_num_pages} pages saved at: {os.path.abspath(output_file)}")
+    print(f"Saved new merged PDF file with {final_num_pages} pages at: {os.path.abspath(output_file)}")
 
 if __name__ == "__main__":
-    merge_pdfs("input_odd.pdf", "input_even.pdf", "merged.pdf")
+    zip_merge_pdfs("input_odd.pdf", "input_even.pdf", "merged.pdf")
