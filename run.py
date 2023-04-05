@@ -5,7 +5,8 @@ def merge_pdfs(odd_file, even_file, output_file):
     """Merges two pdf files. The odd_file contains odd pages only whereas the
     even_file contains even pages in reversed order. These two files result from
     scanning a two sided paper document when first the front side of all pages
-    is scanned, followed by scanning of all back sides.
+    is scanned, followed by scanning of all back sides. This way of scanning
+    can be more practical for large documents.
 
     Args:
         odd_file (str): path of file with odd pages
