@@ -8,4 +8,5 @@ are in reversed order. Merging these documents as is results in a very impractic
 
 I couldn't find a tool that solved this but luckily ChatGPT helped me find pypdf.
 
-The method in run.py handles the two PDF's and creates a zip-merged PDF with all pages in correct order. Tadaa....
+The method in run.py handles the two PDF's and creates a zip-merged PDF with all pages in correct order.
+And you don't need to leave credentials at 'free' online pdf websites. Tadaa....
